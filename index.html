@@ -25,9 +25,15 @@
             <div id="ButtonJB" class="ButtonJB">
                 <div id="Jailbreak" class="Jailbreak" onclick="MODULEXBUTTON()"><a id="JT" class="JT">Launch ModuleX</a></div>
             </div>
-            <iframe id="MainMenu"
-                title="This should load when you click the Launch button!"
-                src="https://www.openstreetmap.org/export/embed.html?bbox=-0.004017949104309083%2C51.47612752641776%2C0.00030577182769775396%2C51.478569861898606&layer=mapnik">
-            </iframe>
+            <iframe src="" id="MainMenu"></iframe>
+
+            <script>
+	            let iframe = document.querySelector("#MainMenu");
+
+            	    iframe.addEventListener('load', function() {
+	            	iframe.style.height = iframe.contentDocument.body.scrollHeight + 'px';
+	        	    iframe.style.width = iframe.contentDocument.body.scrollWidth + 'px';
+                });	
+            </script>
     </body>
 </html>
