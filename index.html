@@ -1,5 +1,5 @@
 <html>
-    <title>ModuleX</title>
+    <title id="title">ModuleX</title>
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./font-awesome.min.css">
     <link rel="stylesheet" href="./simple-notify.min.css">
@@ -11,8 +11,9 @@
     <script>
         function MODULEXBUTTON() {
             document.getElementById("htitle").innerHTML = "ModuleX Menu";
-            var parent = document.getElementById("Jailbreak");
-            var child = document.getElementById("JT");
+            document.getElementById("title").innerHTML = "ModuleX Menu"
+            var parent = document.getElementById("Main");
+            var child = document.getElementById("ButtonJB");
             parent.removeChild(child);
         }
     </script>
