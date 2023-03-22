@@ -4,8 +4,14 @@
     <link rel="stylesheet" href="/font-awesome.min.css">
     <link rel="stylesheet" href="/simple-notify.min.css">
     <div><img id="BG" class="BG"></div>
+    
+    <script>
+        function TestButton() {
+            window.alert("This should work!")
+        }
+    </script>
 
     <body onload="ConsoleCheck()">
-      E
+      <a onClick="TestButton()" class="menuButtonClass">Test</a>
     </body>
 </html>
