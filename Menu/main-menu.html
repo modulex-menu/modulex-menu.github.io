@@ -9,9 +9,14 @@
         function TestButton() {
             window.alert("This should work!")
         }
+        
+        function RefreshTestButton() {
+            window.location.href = 'https://modulex-menu.github.io';
+        }
     </script>
 
     <body onload="ConsoleCheck()">
-      <button onClick="TestButton()" class="menuButtonClass">Test</button>
+        <button onClick="TestButton()" class="menuButtonClass">Test</button>
+        <button onClick="RefreshTestButton()" class="menuButtonClass">Test refresh</button>
     </body>
 </html>
