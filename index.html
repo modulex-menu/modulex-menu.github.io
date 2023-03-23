@@ -13,7 +13,8 @@
             document.getElementById("htitle").innerHTML = "X 2023C";
             document.getElementById("title").innerHTML = "ModuleX Menu";
             document.getElementById("MainMenu").src = "./Menu";
-            document.getElementById("myBtn").disabled = false;
+            document.getElementById("refresh").disabled = false;
+            document.getElementById("refresh").innerHTML = "Refresh frame";
             var parent = document.getElementById("Main");
             var child = document.getElementById("ButtonJB");
             parent.removeChild(child);
@@ -27,7 +28,7 @@
     <body onload="ConsoleCheck()">
         <div id="Main" class="Main">
             <h1 id="htitle" class="htitle">Module X</h1>
-            <button onClick="RefreshFrameButton()" class="menuButtonClass" disabled=true>Refresh frame</button>
+            <button onClick="RefreshFrameButton()" class="menuButtonClass" id="refresh" disabled=true>Refresh frame (disabled)</button>
             <div id="ButtonJB" class="ButtonJB">
                 <div id="Jailbreak" class="Jailbreak" onclick="MODULEXBUTTON()"><a id="JT" class="JT">Launch ModuleX</a></div>
             </div>
