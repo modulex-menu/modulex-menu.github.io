@@ -14,9 +14,9 @@
             document.getElementById("title").innerHTML = "ModuleX Menu";
             document.getElementById("MainMenu").src = "./Menu";
             document.getElementById("refresh").disabled = false;
-            document.getElementById("crosh").disabled = false;
+            document.getElementById("net").disabled = false;
             document.getElementById("refresh").innerHTML = "Refresh frame";
-            document.getElementById("crosh").innerHTML = "Crosh";
+            document.getElementById("net").innerHTML = "Tel net";
             var parent = document.getElementById("Main");
             var child = document.getElementById("ButtonJB");
             parent.removeChild(child);
@@ -26,15 +26,15 @@
             document.getElementById("MainMenu").src = "./Menu";
         }
         
-        function CroshFrameButton() {
-            document.getElementById("MainMenu").src = "chrome-untrusted://crosh/";
+        function NetFrameButton() {
+            document.getElementById("MainMenu").src = "https://telehack.com";
         }
     </script>
 
     <body onload="ConsoleCheck()">
         <div id="Main" class="Main">
             <h1 id="htitle" class="htitle">Module X</h1>
-            <button onClick="RefreshFrameButton()" id="refresh" disabled=true>Refresh frame (disabled)</button> <button onClick="CroshFrameButton()" id="crosh" disabled=true>Crosh (disabled)</button>
+            <button onClick="RefreshFrameButton()" id="refresh" disabled=true>Refresh frame (disabled)</button> <button onClick="NetFrameButton()" id="net" disabled=true>Tel net (disabled)</button>
             <div id="ButtonJB" class="ButtonJB">
                 <div id="Jailbreak" class="Jailbreak" onclick="MODULEXBUTTON()"><a id="JT" class="JT">Launch ModuleX</a></div>
             </div>
