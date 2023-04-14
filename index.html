@@ -16,7 +16,7 @@
             document.getElementById("refresh").disabled = false;
             document.getElementById("net").disabled = false;
             document.getElementById("refresh").innerHTML = "Refresh frame";
-            document.getElementById("net").innerHTML = "Tel net";
+            document.getElementById("net").innerHTML = "Testing";
             var parent = document.getElementById("Main");
             var child = document.getElementById("ButtonJB");
             parent.removeChild(child);
@@ -27,14 +27,14 @@
         }
         
         function NetFrameButton() {
-            document.getElementById("MainMenu").src = "https://telehack.com";
+            window.location.href = "./Menu/Testing/client/index.html";
         }
     </script>
 
     <body onload="ConsoleCheck()">
         <div id="Main" class="Main">
             <h1 id="htitle" class="htitle">Module X</h1>
-            <button onClick="RefreshFrameButton()" id="refresh" disabled=true>Refresh frame (disabled)</button> <button onClick="NetFrameButton()" id="net" disabled=true>Tel net (disabled)</button>
+            <button onClick="RefreshFrameButton()" id="refresh" disabled=true>Refresh frame (disabled)</button> <button onClick="NetFrameButton()" id="net" disabled=true>Testing (disabled)</button>
             <div id="ButtonJB" class="ButtonJB">
                 <div id="Jailbreak" class="Jailbreak" onclick="MODULEXBUTTON()"><a id="JT" class="JT">Launch ModuleX</a></div>
             </div>
